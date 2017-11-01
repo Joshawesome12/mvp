@@ -1,0 +1,26 @@
+{
+  "name": "hratx30-mvp",
+  "version": "1.0.0",
+  "description": "Show Hero Stats side-by-side",
+  "main": "app.js",
+  "scripts": {
+    "server-dev": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joshawesome12/hratx30-mvp.git"
+  },
+  "author": "Joshawesome12",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joshawesome12/hratx30-mvp/issues"
+  },
+  "homepage": "https://github.com/Joshawesome12/hratx30-mvp#readme",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "express": "^4.16.2",
+    "jquery": "^3.2.1",
+    "mysql": "^2.13.0",
+    "body-parser": "^1.17.2"
+  }
+}
