@@ -1,5 +1,11 @@
 <div>
-  <h4> List Component </h4>
-  There are {{$ctrl.items.length}} items.
-  <list-item ng-repeat="item in $ctrl.items" item=item />
+  <!-- <h4> List Component </h4> -->
+  <!-- There are {{$ctrl.items.length}} items. -->
+  <!-- <list-item ng-repeat="item in $ctrl.items" item=item /> -->
+  <select>
+    <option ng-repeat="item in $ctrl.items" item=item>{{item.faction +':'+ item.name}}</option>
+  </select>
+  <h4 style='color:yellow'>VERSUS</h4>
+  <select><option ng-repeat="item in $ctrl.items" item=item>{{item.faction +':'+ item.name}}</option>
+</select>
 </div>

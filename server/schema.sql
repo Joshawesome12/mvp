@@ -1,4 +1,4 @@
-DROP DATABASE IF EXISTS test;
+DROP DATABASE IF EXISTS heros;
 
 CREATE DATABASE heros;
 -- was test
@@ -40,5 +40,5 @@ INSERT INTO items (faction,name, health, damage, agility) values ("Knights","War
 
 
 /*  Execute this file from the command line by typing:
-*    mysql -u root < server/schema.sql
+*    mysql -u student < server/schema.sql
 *  to create the database and the tables.*/

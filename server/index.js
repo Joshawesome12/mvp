@@ -15,7 +15,6 @@ app.get('/items', function (req, res) {
     if(err) {
       res.sendStatus(500);
     } else {
-      console.log(data);
       res.json(data);
     }
   });

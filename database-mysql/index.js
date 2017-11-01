@@ -4,7 +4,7 @@ var connection = mysql.createConnection({
   host     : 'localhost',
   user     : 'student',
   password : 'student',
-  database : 'test'
+  database : 'heros'
 });
 
 var selectAll = function(callback) {

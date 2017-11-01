@@ -1,3 +1,15 @@
 body {
   background-image:url("http://tinyurl.com/y8wuozwn")
 }
+
+.honor {
+  text-align: center;
+  color: yellow;
+  position: absolute;
+  right: 800px;
+}
+
+/*.selected {
+  height:300px;
+  width:200px;
+}*/
