@@ -2,11 +2,16 @@
   <!-- <h4> List Component </h4> -->
   <!-- There are {{$ctrl.items.length}} items. -->
   <!-- <list-item ng-repeat="item in $ctrl.items" item=item /> -->
-  <select class="dropdown1">
-    <option ng-repeat="item in $ctrl.items" item=item>{{item.faction +':'+ item.name}}</option>
+  <img style="position:absolute; right:1050px;" src="{{selectedHero}}">
+  <select class="dropdown1" ng-model="selectedHero" >
+    <option ng-repeat="item in $ctrl.items" item=item value="{{item.imgUrl}}">{{item.faction +':'+ item.name}}</option>
   </select>
+
   <h4 class="versus" style='color:yellow'>VERSUS</h4>
-  <select class="dropdown2"><option ng-repeat="item in $ctrl.items" item=item>{{item.faction +':'+ item.name}}</option>
+
+  <img style="position:absolute; right:500px;" src="{{selectedHero2}}">
+  <select class="dropdown2" ng-model="selectedHero2">
+    <option ng-repeat="item in $ctrl.items" item=item value="{{item.imgUrl}}">{{item.faction +':'+ item.name}}</option>
 </select>
 
 </div>
