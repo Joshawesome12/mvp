@@ -2,10 +2,11 @@
   <!-- <h4> List Component </h4> -->
   <!-- There are {{$ctrl.items.length}} items. -->
   <!-- <list-item ng-repeat="item in $ctrl.items" item=item /> -->
-  <select>
+  <select class="dropdown1">
     <option ng-repeat="item in $ctrl.items" item=item>{{item.faction +':'+ item.name}}</option>
   </select>
-  <h4 style='color:yellow'>VERSUS</h4>
-  <select><option ng-repeat="item in $ctrl.items" item=item>{{item.faction +':'+ item.name}}</option>
+  <h4 class="versus" style='color:yellow'>VERSUS</h4>
+  <select ng-model= class="dropdown2"><option ng-repeat="item in $ctrl.items" item=item>{{item.faction +':'+ item.name}}</option>
 </select>
+<img src="https://ubistatic19-a.akamaihd.net/resource/en-us/game/forhonor/fh-game/fh_game-info-berzerker_ncsa.png">
 </div>

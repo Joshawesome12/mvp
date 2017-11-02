@@ -6,8 +6,31 @@ body {
   text-align: center;
   color: yellow;
   position: absolute;
+  top:900px;
   right: 800px;
 }
+
+.dropdown1 {
+  position: absolute;
+  top: 700px;
+  left:600px;
+}
+
+.dropdown2 {
+  position: absolute;
+  right: 600px;
+  top: 700px;
+}
+
+.versus {
+  font-size: 20pt;
+  position: absolute;
+  right: 900px;
+  top: 660px;
+}
+
+
+
 
 /*.selected {
   height:300px;
