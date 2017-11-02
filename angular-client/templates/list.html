@@ -2,16 +2,41 @@
   <!-- <h4> List Component </h4> -->
   <!-- There are {{$ctrl.items.length}} items. -->
   <!-- <list-item ng-repeat="item in $ctrl.items" item=item /> -->
-  <img style="position:absolute; right:1050px;" src="{{selectedHero}}">
-  <select class="dropdown1" ng-model="selectedHero" >
-    <option ng-repeat="item in $ctrl.items" item=item value="{{item.imgUrl}}">{{item.faction +':'+ item.name}}</option>
+  <img style="position:absolute; right:1050px;" src="{{selectedHero.imgUrl}}">
+  <select class="dropdown1" ng-model="selectedHero" ng-options="item.faction+':'+item.name for item in $ctrl.items">
+    <option value="" disabled selected>Select your hero</option>
+    <!-- <option ng-repeat="item in $ctrl.items" item=item value="{{item.imgUrl}}">{{item.faction +':'+ item.name}}</option> -->
   </select>
 
   <h4 class="versus" style='color:yellow'>VERSUS</h4>
 
-  <img style="position:absolute; right:500px;" src="{{selectedHero2}}">
-  <select class="dropdown2" ng-model="selectedHero2">
-    <option ng-repeat="item in $ctrl.items" item=item value="{{item.imgUrl}}">{{item.faction +':'+ item.name}}</option>
+
+  <ul class="list1" style="color">
+    <li style="color:lightgreen">Health:  {{selectedHero.health}}</li>
+    <li style="color:red">Damage:  {{selectedHero.damage}}</li>
+    <li style="color:yellow">Agility:  {{selectedHero.agility}}</li>
+  </ul>
+
+  <img style="position:absolute; right:500px;" src="{{selectedHero2.imgUrl}}">
+  <select class="dropdown2" ng-model="selectedHero2" ng-options="item.faction+':'+item.name for item in $ctrl.items">
+    <option value="" disabled selected>Select your hero</option>
 </select>
 
+
+<ul class="list2" style="color">
+  <li style="color:lightgreen">Health:  {{selectedHero2.health}}</li>
+  <li style="color:red">Damage:  {{selectedHero2.damage}}</li>
+  <li style="color:yellow">Agility:  {{selectedHero2.agility}}</li>
+</ul>
+
 </div>
+
+
+
+
+
+<!-- <img style="position:absolute; right:500px;" src="{{selectedHero2}}">
+<select class="dropdown2" ng-model="selectedHero2" >
+  <option value="" disabled selected>Select your hero</option>
+  <option  ng-repeat="item in $ctrl.items" item=item value="{{item.imgUrl}}">{{item.faction +':'+ item.name}}</option>
+</select> -->
