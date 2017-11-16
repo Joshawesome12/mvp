@@ -4,6 +4,7 @@ angular.module('app')
     $http.get('/items')
     .then(function({data}) {
       if(callback) {
+        console.log(data);
         callback(data);
       }
     })
