@@ -2,7 +2,7 @@
 This is a project I completed as a student at [hackreactor](http://hackreactor.com). This project was worked on with a pair.
 
 ## Installation  
-npm install  
+```npm install```  
 Must Have MySQL installed  
 
 ## Usage  
