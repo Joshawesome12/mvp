@@ -6,6 +6,6 @@ npm install
 Must Have MySQL installed  
 
 ## Usage  
-Run client Server - npm run server-dev  
-Run SQL Server - mysql.start  
-Enter MySQL and seed file - mysql -u root < server/schema.sql  
+Run client Server - ```npm run server-dev```  
+Run SQL Server - ```mysql.start```  
+Enter MySQL and seed file - ```mysql -u root < server/schema.sql```  
