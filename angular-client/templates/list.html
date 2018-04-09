@@ -2,41 +2,56 @@
   <!-- <h4> List Component </h4> -->
   <!-- There are {{$ctrl.items.length}} items. -->
   <!-- <list-item ng-repeat="item in $ctrl.items" item=item /> -->
-  <img id="fighter1" style="position:absolute; right:1050px;" src="{{selectedHero.imgUrl}}">
+
+<div class='stats'>
+  <div class='box1'>
+
+    <img id="fighter1" style="position:absolute; right:1050px;" src="{{selectedHero.imgUrl}}">
+
+    <ul class="list1" style="color">
+      <li style="color:lightgreen;">Health:  {{selectedHero.health}}</li>
+      <li style="color:red">Damage:  {{selectedHero.damage}}</li>
+      <li style="color:yellow">Agility:  {{selectedHero.agility}}</li>
+    </ul>
+
+  </div>
+
+  <div class='box2'>
+    <img id="fighter2" style="position:absolute; right:500px;" src="{{selectedHero2.imgUrl}}">
+
+    <ul class="list2" style="color">
+      <li style="color:lightgreen">Health:  {{selectedHero2.health}}</li>
+      <li style="color:red">Damage:  {{selectedHero2.damage}}</li>
+      <li style="color:yellow">Agility:  {{selectedHero2.agility}}</li>
+    </ul>
+
+  </div>
+</div>
+
+<div class="inline" style='color:yellow'>
   <select id="soflow" class="dropdown1" ng-model="selectedHero" ng-options="item.faction+':'+item.name for item in $ctrl.items">
     <option value="" disabled selected>Select your hero</option>
     <!-- <option ng-repeat="item in $ctrl.items" item=item value="{{item.imgUrl}}">{{item.faction +':'+ item.name}}</option> -->
   </select>
 
-  <div class="versus" style='color:yellow'>
-    <h4 style="position: relative; top:30px">VERSUS</h4>
-    <button class="fight" ng-click="$ctrl.fight()" style="position: relative; top:50px;left:20px;">FIGHT!!</button>
+  <div class='versus'>
+  <h4 style="position: relative; top:30px">VERSUS</h4>
+  <button class="fight" ng-click="$ctrl.fight()">FIGHT!!</button>
   </div>
 
-  <ul class="list1" style="color">
-    <li style="color:lightgreen;">Health:  {{selectedHero.health}}</li>
-    <li style="color:red">Damage:  {{selectedHero.damage}}</li>
-    <li style="color:yellow">Agility:  {{selectedHero.agility}}</li>
-  </ul>
-  <img id="fighter2" style="position:absolute; right:500px;" src="{{selectedHero2.imgUrl}}">
   <select id="soflow" class="dropdown2" ng-model="selectedHero2" ng-options="item.faction+':'+item.name for item in $ctrl.items">
     <option value="" disabled selected>Select your hero</option>
-</select>
+  </select>
 
+</div>
 
-<ul class="list2" style="color">
-  <li style="color:lightgreen">Health:  {{selectedHero2.health}}</li>
-  <li style="color:red">Damage:  {{selectedHero2.damage}}</li>
-  <li style="color:yellow">Agility:  {{selectedHero2.agility}}</li>
-</ul>
+<h1 class="honor">For Honor Stat Comparator</h1>
 
 </div>
 
 <audio id="fightsound">
   <source src="../sounds/fight.mp3" type="audio/mp3">
 </audio>
-
-
 
 <!-- <img src="https://orangemushroom.files.wordpress.com/2016/07/demon-awakening-effect-slash-2.gif"> -->
 <!-- <img style="position:absolute; right:500px;" src="{{selectedHero2}}">

@@ -3,30 +3,53 @@ body {
 }
 
 .honor {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   color: yellow;
-  position: absolute;
-  top:900px;
-  right: 750px;
 }
 
 .dropdown1 {
-  position: absolute;
+  /* position: absolute;
   top: 700px;
-  left:600px;
+  left:600px; */
 }
 
 .dropdown2 {
-  position: absolute;
-  right: 600px;
-  top: 700px;
+  /* position: absolute; */
+  /* right: 600px;
+  top: 700px; */
+}
+
+.fight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
 .versus {
   font-size: 20pt;
-  position: absolute;
-  right: 850px;
-  top: 660px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.inline {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
 }
 
 li{
@@ -37,24 +60,18 @@ li{
 .list1 {
   font-family: cursive;
   list-style-type: none;
-  position: absolute;
-  top:400px;
-  left:100px;
+  /* position: absolute; */
+  /* top:400px; */
+  /* left:100px; */
 }
 
 .list2 {
   font-family: cursive;
   list-style-type: none;
-  position: absolute;
-  top:400px;
-  right:300px;
+  /* position: absolute; */
+  /* top:400px; */
+  /* right:300px; */
 }
-
-.background {
-
-}
-
-
 
 select#soflow, select#soflow-color{
    -webkit-appearance: button;
